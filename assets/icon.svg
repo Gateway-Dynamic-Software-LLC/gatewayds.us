@@ -74,41 +74,37 @@
   <rect x="6" y="6" width="488" height="488" rx="88" fill="url(#gds3-grid)"/>
   <rect x="6" y="6" width="488" height="488" rx="88" fill="none" stroke="#3A2A63" stroke-width="2" opacity="0.6"/>
 
-  <!-- Code bracket "<" flanking the left leg, glowing -->
-  <path d="M 100 210 L 68 250 L 100 290"
-        fill="none" stroke="#B24BFF" stroke-width="11"
-        stroke-linecap="round" stroke-linejoin="round"
-        filter="url(#glowTight)"/>
+  <!-- Foreground mark (brackets, arch, chip), scaled up around the badge center -->
+  <g transform="translate(250 250) scale(1.15) translate(-250 -250)">
 
-  <!-- Code bracket ">" flanking the right leg, glowing -->
-  <path d="M 400 210 L 432 250 L 400 290"
-        fill="none" stroke="#B24BFF" stroke-width="11"
-        stroke-linecap="round" stroke-linejoin="round"
-        filter="url(#glowTight)"/>
-
-  <!-- Gateway arch, glowing neon catenary -->
-  <path d="M 148 420
-           C 148 246, 190 100, 250 92
-           C 310 100, 352 246, 352 420"
-        fill="none" stroke="url(#gds3-arch)" stroke-width="22"
-        stroke-linecap="round"
-        filter="url(#glowSoft)"/>
-
-  <!-- Microchip keystone, glowing cyan/purple -->
-  <g transform="translate(250 256)">
-    <g stroke="#39E9FF" stroke-width="6" stroke-linecap="round" filter="url(#glowTight)">
-      <line x1="-14" y1="-32" x2="-14" y2="-20"/>
-      <line x1="0"   y1="-36" x2="0"   y2="-20"/>
-      <line x1="14"  y1="-32" x2="14"  y2="-20"/>
-      <line x1="-14" y1="32"  x2="-14" y2="20"/>
-      <line x1="0"   y1="36"  x2="0"   y2="20"/>
-      <line x1="14"  y1="32"  x2="14"  y2="20"/>
-    </g>
-    <rect x="-30" y="-20" width="60" height="40" rx="8"
-          fill="#0A0716" stroke="url(#gds3-chip)" stroke-width="4"
+    <!-- Code bracket "<" flanking the left leg, glowing -->
+    <path d="M 100 210 L 68 250 L 100 290"
+          fill="none" stroke="#B24BFF" stroke-width="11"
+          stroke-linecap="round" stroke-linejoin="round"
           filter="url(#glowTight)"/>
-    <rect x="-14" y="-9" width="28" height="18" rx="3"
-          fill="none" stroke="#39E9FF" stroke-width="2.5" opacity="0.9"/>
-    <line x1="0" y1="-9" x2="0" y2="9" stroke="#39E9FF" stroke-width="2.5" opacity="0.9"/>
+
+    <!-- Code bracket ">" flanking the right leg, glowing -->
+    <path d="M 400 210 L 432 250 L 400 290"
+          fill="none" stroke="#B24BFF" stroke-width="11"
+          stroke-linecap="round" stroke-linejoin="round"
+          filter="url(#glowTight)"/>
+
+    <!-- Gateway arch, glowing neon catenary -->
+    <path d="M 148 420
+             C 148 246, 190 100, 250 92
+             C 310 100, 352 246, 352 420"
+          fill="none" stroke="url(#gds3-arch)" stroke-width="22"
+          stroke-linecap="round"
+          filter="url(#glowSoft)"/>
+
+    <!-- Hashtag keystone, glowing cyan -->
+    <g transform="translate(250 256) scale(1.7)"
+       stroke="#39E9FF" stroke-width="9" stroke-linecap="round"
+       filter="url(#glowTight)">
+      <line x1="-13" y1="-30" x2="-13" y2="30"/>
+      <line x1="13"  y1="-30" x2="13"  y2="30"/>
+      <line x1="-30" y1="-13" x2="30"  y2="-13"/>
+      <line x1="-30" y1="13"  x2="30"  y2="13"/>
+    </g>
   </g>
 </svg>
