@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Gateway Dynamic Software, LLC — Brand Icon (Neon Concept)
+  Original artwork created for Gateway Dynamic Software, LLC (Saint Louis, MO).
+  Copyright (c) 2026 Gateway Dynamic Software, LLC. All rights reserved.
+  This is an original design, not derived from or copied from any third-party mark.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
+     viewBox="0 0 500 500" width="500" height="500" role="img"
+     aria-labelledby="gdsIconTitle3 gdsIconDesc3">
+
+  <title id="gdsIconTitle3">Gateway Dynamic Software, LLC — Icon (Neon)</title>
+  <desc id="gdsIconDesc3">A neon blue-to-purple glowing arch built from code brackets, with a glowing cyan microchip keystone, on a near-black background with a faint circuit grid.</desc>
+
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:title>Gateway Dynamic Software, LLC Icon - Neon Concept</dc:title>
+        <dc:creator>Gateway Dynamic Software, LLC</dc:creator>
+        <dc:rights>Copyright (c) 2026 Gateway Dynamic Software, LLC. All rights reserved.</dc:rights>
+        <dc:description>Original brand icon: neon blue/purple glowing gateway arch built from code brackets with a glowing microchip keystone. Independently created; not copied from any other organization's mark.</dc:description>
+        <dc:date>2026-07-12</dc:date>
+        <dc:identifier>gateway-dynamic-software-llc-icon-v3-neon</dc:identifier>
+        <cc:license rdf:resource="All Rights Reserved"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+
+  <defs>
+    <radialGradient id="gds3-bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#170A2E"/>
+      <stop offset="60%" stop-color="#0A0716"/>
+      <stop offset="100%" stop-color="#060410"/>
+    </radialGradient>
+
+    <linearGradient id="gds3-arch" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7A2BFF"/>
+      <stop offset="55%" stop-color="#4E7CFF"/>
+      <stop offset="100%" stop-color="#39E9FF"/>
+    </linearGradient>
+
+    <linearGradient id="gds3-chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39E9FF"/>
+      <stop offset="100%" stop-color="#B24BFF"/>
+    </linearGradient>
+
+    <!-- Neon glow filter: blurred duplicate behind a crisp stroke -->
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur1"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowTight" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="gds3-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#3A2A63" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Badge background -->
+  <rect x="6" y="6" width="488" height="488" rx="88" fill="url(#gds3-bg)"/>
+  <rect x="6" y="6" width="488" height="488" rx="88" fill="url(#gds3-grid)"/>
+  <rect x="6" y="6" width="488" height="488" rx="88" fill="none" stroke="#3A2A63" stroke-width="2" opacity="0.6"/>
+
+  <!-- Code bracket "<" flanking the left leg, glowing -->
+  <path d="M 100 210 L 68 250 L 100 290"
+        fill="none" stroke="#B24BFF" stroke-width="11"
+        stroke-linecap="round" stroke-linejoin="round"
+        filter="url(#glowTight)"/>
+
+  <!-- Code bracket ">" flanking the right leg, glowing -->
+  <path d="M 400 210 L 432 250 L 400 290"
+        fill="none" stroke="#B24BFF" stroke-width="11"
+        stroke-linecap="round" stroke-linejoin="round"
+        filter="url(#glowTight)"/>
+
+  <!-- Gateway arch, glowing neon catenary -->
+  <path d="M 148 420
+           C 148 246, 190 100, 250 92
+           C 310 100, 352 246, 352 420"
+        fill="none" stroke="url(#gds3-arch)" stroke-width="22"
+        stroke-linecap="round"
+        filter="url(#glowSoft)"/>
+
+  <!-- Microchip keystone, glowing cyan/purple -->
+  <g transform="translate(250 256)">
+    <g stroke="#39E9FF" stroke-width="6" stroke-linecap="round" filter="url(#glowTight)">
+      <line x1="-14" y1="-32" x2="-14" y2="-20"/>
+      <line x1="0"   y1="-36" x2="0"   y2="-20"/>
+      <line x1="14"  y1="-32" x2="14"  y2="-20"/>
+      <line x1="-14" y1="32"  x2="-14" y2="20"/>
+      <line x1="0"   y1="36"  x2="0"   y2="20"/>
+      <line x1="14"  y1="32"  x2="14"  y2="20"/>
+    </g>
+    <rect x="-30" y="-20" width="60" height="40" rx="8"
+          fill="#0A0716" stroke="url(#gds3-chip)" stroke-width="4"
+          filter="url(#glowTight)"/>
+    <rect x="-14" y="-9" width="28" height="18" rx="3"
+          fill="none" stroke="#39E9FF" stroke-width="2.5" opacity="0.9"/>
+    <line x1="0" y1="-9" x2="0" y2="9" stroke="#39E9FF" stroke-width="2.5" opacity="0.9"/>
+  </g>
+</svg>

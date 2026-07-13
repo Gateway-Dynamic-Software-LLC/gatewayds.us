@@ -48,6 +48,19 @@
     }
 
     .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+
+    .nav-logo span {
       font-size: 0.95rem;
       font-weight: 600;
       letter-spacing: 0.02em;
@@ -317,7 +330,10 @@
 
   <!-- NAV -->
   <nav>
-    <span class="nav-logo">GDS</span>
+    <a href="#" class="nav-logo">
+      <img src="assets/icon.svg" alt="Gateway Dynamic Software logo" />
+      <span>GDS</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
